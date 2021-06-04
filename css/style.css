@@ -13,11 +13,14 @@ Dark green: #28b485
   box-sizing: border-box;
 }
 
+html{
+  font-size: 10px;
+}
 body {
-  padding: 40px;
+  padding: 4rem;
   font-family: "Lato", sans-serif;
-  font-weight: 400px;
-  font-size: 16px;
+  font-weight: 40rem;
+  font-size: 1.6rem;
   line-height: 1.7;
   color: #777;
 }
@@ -38,17 +41,17 @@ body {
 
 .logo-box {
   position: absolute;
-  top: 40px;
-  left: 40px;
+  top: 4rem;
+  left: 4rem;
 }
 
 .logo {
-  height: 35px;
+  height: 3.5rem;
 }
 
 .text-box {
   position: absolute;
-  top: 40%;
+  top: 35%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: #fff;
@@ -58,23 +61,24 @@ body {
 }
 
 .heading-primary {
-    margin-bottom: 30px;
+  margin-bottom: 8rem;
 }
 
 .heading-primary-main {
   display: block;
-  font-size: 60px;
+  font-size: 9rem;
   font-weight: 400;
-  letter-spacing: 35px;
+  letter-spacing: 3.5rem;
   animation-name: moveInLeft;
   animation-duration: 1s;
+  margin-bottom: 1rem;
 }
 
 .heading-primary-sub {
   display: block;
-  font-size: 20px;
-  font-weight: 700;
-  letter-spacing: 17.4px;
+  font-size: 3.2rem;
+  font-weight: 7rem;
+  letter-spacing: 1.74rem;
   animation-name: moveInRight;
   animation-duration: 1s;
 }
@@ -82,11 +86,11 @@ body {
 @keyframes moveInLeft {
   0% {
     opacity: 0;
-    transform: translateX(-100px);
+    transform: translateX(-10rem);
   }
 
   80% {
-    transform: translateX(10px);
+    transform: translateX(1rem);
   }
 
   100% {
@@ -98,11 +102,11 @@ body {
 @keyframes moveInRight {
   0% {
     opacity: 0;
-    transform: translateX(100px);
+    transform: translateX(10rem);
   }
 
   80% {
-    transform: translateX(-10px);
+    transform: translateX(-1rem);
   }
 
   100% {
@@ -111,27 +115,30 @@ body {
   }
 }
 
-.btn{
-    text-decoration: none;
-    font-size: 20px;
-    border-radius: 100px;
-    color: #777;
-    background-color: #fff;
-    padding: 15px 40px;
-    transition: all 2s;
-}
-.btn:hover{
-    transform: translateY(-3px);
-    background-color: antiquewhite;
+.btn {
+  border-radius: 10rem;
+  padding: 2rem 6rem;
 }
 
-.btn:active{
-    transform: translateY(-1px);
-    background-color: red;
+.btn-white {
 }
 
 .btn:link,
-.btn:visited{
-    text-transform: uppercase;
-    text-decoration: none;
+.btn:visited {
+  color: #777;
+  background-color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 2rem;
+  display: inline-block;
+}
+
+
+.btn:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+  transform: translateY(1rem);
 }
